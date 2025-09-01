@@ -57,6 +57,7 @@ download_format = st.selectbox("Formati i daljes", ["Word (.docx)", "PDF (.pdf)"
 # ────────────────────────────────────────────────────────────────────────────
 # Textract helpers
 # ────────────────────────────────────────────────────────────────────────────
+
 def run_textract(file_bytes: bytes) -> Dict[str, Any]:
     return textract.analyze_document(
         Document={'Bytes': file_bytes},
