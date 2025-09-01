@@ -30,6 +30,7 @@ textract = boto3.client(
     region_name           = AWS_REGION,
 )
 
+
 # ── DOCX stuff
 from docx import Document
 from docx.shared import Pt, RGBColor, Cm, Mm
